@@ -1,0 +1,130 @@
+/* Color Variables */
+$primaryColor: #3F51B5;
+$secondaryColor: #7986CB;
+$lightText: #C5CAE9;
+$lightGrey: #E0E0E0;
+$grey: #9E9E9E;
+$alertColor: #F44336;
+
+/* Size Variables */
+$containerWidthSm: 260px;
+$inputHeightSm: 45px;
+$inputWidthSm: 61px;
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	height: 100%;
+}
+
+h1,h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+input, button, input:active, input:focus, button:active, button:focus {
+	outline: 0px;
+}
+
+.app-title {
+	text-align: center;
+	color: $lightText;
+	font-weight: 200;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+.container {
+	width: $containerWidthSm;
+	margin: 0px auto;
+	text-align: center;
+
+	.time-box {
+		color: $primaryColor;
+		font-weight: 400;
+		letter-spacing: 3px;
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+
+	.alarm-input {
+		color: $grey;
+		float: left;
+		text-align: center;
+		box-sizing: border-box;
+		transition: border-color 300ms;
+		height: $inputHeightSm;
+		width: $inputWidthSm;
+		font-size: 18px;
+		margin-right: 5px;
+		border: 3px $lightGrey solid;
+	}
+
+	.alarm-input:focus {
+		border-color: $primaryColor; 
+	}
+
+	.alarm-btn {
+		cursor: pointer;
+		background-color: $lightGrey;
+		height: $inputHeightSm;
+		font-size: 18px;
+		border: 3px solid;
+	}
+
+	.period-btn {
+		border-color: $lightGrey;
+		color: $grey;
+		width: $inputWidthSm;
+	}
+
+	.active-period-btn {
+		background-color: $secondaryColor;
+		border-color: $secondaryColor;
+		color: #FFFFFF;
+	}
+	
+	.set-btn {
+		float: left;
+		width: $containerWidthSm;
+		margin-top: 10px;
+		border-color: $secondaryColor;
+		background-color: $secondaryColor;
+		color: #FFFFFF;
+		padding-left: 20px;
+		padding-right: 20px;
+		transition: border-color 300ms, background-color 300ms; 
+	}
+
+	.set-btn:hover {
+		border-color: $primaryColor;
+		background-color: $primaryColor;
+
+	}
+
+	.alarm-list {
+		float: left;
+		text-align: left;
+		width: $containerWidthSm;
+	}
+
+	.alarm-item {
+		background-color: $lightGrey;
+		color: $grey;
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+
+	.alert-box {
+		background-color: $alertColor;
+		float: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: $containerWidthSm;
+		color: #FFFFFF;
+		margin-bottom: 10px;
+		display: none;
+	}
+}

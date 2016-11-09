@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Alarm Clock App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Alarm Clock App">
+  <meta name="author" content="Will Kashdan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon shortcut" href="https://www.squarespace.com/favicon.ico">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<header class="app-header">
+		<h1 class="app-title">ALARM CLOCK</h1>
+	</header>
+	<main class="container">
+		<div id="alertBox" class="alert-box"></div>
+		<div id="timeBox" class="time-box"></div>
+		<div class="alarm-form">
+			<form id="alarmForm">
+				<input id="alarmHour" form="alarmForm" class="alarm-input"/>
+				<input id="alarmMinute" class="alarm-input"/>
+				<div id="periodBtns">
+					<button id="amBtn" type="button" value="am" class="alarm-btn period-btn active-period-btn">AM</button>
+					<button id="pmBtn" type="button" value="pm" class="alarm-btn period-btn">PM</button>
+				</div>
+				<button id="setAlarmBtn" form="alarmForm" class="alarm-btn set-btn">SET ALARM</button>
+			</form>
+		</div>
+		<div class="alarm-list">
+			<h2 class="app-title">Alarms</h2>
+			<div id="alarmBox">
+				<div class="alarm-item">No Alarms Set</div>
+			</div>
+		</div>
+	</main>
+	<script src="./scripts/models/Clock.js"></script>
+	<script src="./scripts/models/Alarm.js"></script>
+	<script src="./scripts/models/AlarmClockApp.js"></script>
+	<script src="./scripts/models/AlarmClockView.js"></script>
+	<script src="./scripts/models/AlarmClockController.js"></script>
+ 	<script src="./scripts/app.js"></script>
+</body>
+</html>

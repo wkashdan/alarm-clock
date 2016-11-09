@@ -1,0 +1,13 @@
+{
+  "name": "alarmclockapp",
+  "version": "1.0.0",
+  "description": "An Alarm Clock App - Squarespace Javascript Project",
+  "main": "index.js",
+  "scripts": {
+    "watch-styles": "sass --watch styles/styles.scss:styles/styles.css",
+    "sass": "sass styles/styles.scss styles/styles.css",
+    "start": "npm run sass && http-server -p 3000"
+  },
+  "author": "Will Kashdan",
+  "license": "ISC"
+}
